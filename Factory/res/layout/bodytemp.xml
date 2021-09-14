@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (c) 2011-2014, Qualcomm Technologies, Inc. All Rights Reserved.
+  Qualcomm Technologies Proprietary and Confidential.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/body_temp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="36sp"
+        android:singleLine="true"
+        android:layout_marginTop="0dp"
+        android:layout_gravity="top|center_horizontal" />
+    <Button
+        android:id="@+id/bt_temp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/test_result_button_bar_height"
+        android:gravity="center"
+        android:textSize="36sp"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        />
+    <include
+        android:id="@+id/bottom_button_layout"
+        layout="@layout/bottom_button_layout" >
+    </include>
+
+</LinearLayout>

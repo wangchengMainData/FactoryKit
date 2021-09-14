@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".agingtest">
+
+    <CheckBox
+        android:id="@+id/agingtest_lcd_cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/agingtest_lcd_cb"
+        android:layout_marginLeft="20dip"
+
+        />
+
+    <CheckBox
+        android:id="@+id/agingtest_spk_cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/agingtest_spk_cb"
+        android:layout_marginLeft="20dip"
+
+        />
+
+    <CheckBox
+        android:id="@+id/agingtest_vbr_cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/agingtest_vbr_cb"
+        android:layout_marginLeft="20dip"
+
+        />
+
+    <CheckBox
+        android:id="@+id/agingtest_inf_cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/agingtest_inf_cb"
+        android:layout_marginLeft="20dip"
+
+        />
+
+    <CheckBox
+        android:id="@+id/agingtest_fls_cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/agingtest_fls_cb"
+        android:layout_marginLeft="20dip"
+
+        />
+
+    <Button
+        android:id="@+id/agingtest_start_bt"
+        android:layout_width="175dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="20dp"
+        android:text="@string/agingtest_start_bt"
+        tools:layout_editor_absoluteY="466dp" />
+
+    <TextView
+        android:id="@+id/lasttimer"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        >
+
+    </TextView>
+
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (c) 2011-2014, Qualcomm Technologies, Inc. All Rights Reserved.
+  Qualcomm Technologies Proprietary and Confidential.
+-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/shake_hint"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/gsensor_result"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#000"/>
+
+    <ImageView
+        android:id="@+id/gsensor_arrow"
+        android:layout_width="216dp"
+        android:layout_height="107dp"
+        android:layout_gravity="center"
+        android:src="@drawable/normalarrow"/>
+
+    <TextView
+        android:id="@+id/gsensor_tips"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/gsensor_tips"
+        android:textColor="@color/green"
+        android:textSize="20sp"
+        android:layout_marginTop="7dp"/>
+
+</LinearLayout>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.gosuncn.zfyfw"
+    coreApp="true"
+    android:sharedUserId="android.uid.system"
+    >
+
+    <!-- REQ088, lockdevice, wmd, 2021.0611 -->
+<!--    <permission-->
+<!--        android:name="android.permission.GXX_DEVICE_LOCK_CONTROL"-->
+<!--        android:protectionLevel="signatureOrSystem" />-->
+    <uses-permission android:name="android.permission.GXX_DEVICE_LOCK_CONTROL"/>
+
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+    <uses-permission android:name="android.Manifest.permission.DELETE_PACKAGES"/>
+    <uses-permission android:name="android.Manifest.permission.INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.Manifest.permission.INSTALL_EXISTING_PACKAGES"/>
+    <uses-permission android:name="android.permission.DEVICE_POWER"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+<!--    <uses-sdk android:minSdkVersion='25'/>-->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE" />
+    <uses-permission android:name="android.permission.REBOOT"/>
+        <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.Manifest.permission.RECOVERY" />
+
+    <!-- PLM14773, install app quietly, wmd, 2020.0720 -->
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES" />
+    <uses-permission android:name="permission.REQUEST_DELETE_PACKAGES" />
+    <uses-permission android:name="android.permission.DELETE_PACKAGES" />
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.CONTROL_VPN"
+        tools:ignore="ProtectedPermissions"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+
+    <!-- REQ102, setSysTime, wmd, 2021.0609 -->
+    <uses-permission android:name="android.permission.SET_TIME"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.OVERRIDE_WIFI_CONFIG" />
+    <uses-permission android:name="android.permission.FORCE_STOP_PACKAGES" />
+
+    <application
+        android:name=".MainApp"
+        android:allowBackup="false"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:theme="@style/AppTheme"
+        android:supportsRtl="true"
+        android:persistent="true">
+        <activity
+            android:name=".PowerOnOffActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <data android:host="noicon" android:scheme="aoto.com"></data>
+            </intent-filter>
+        </activity>
+
+<!--        <category android:name="android.intent.category.LAUNCHER" />-->
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.gosuncn.zfyhwapidemo.activity.AppInstallActivity"
+            android:label="@string/app_install_activity_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.gosuncn.zfyhwapidemo.activity.FlsBroadcastActivity"
+            android:label="Flsbroadcast">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+            </intent-filter>
+        </activity>
+<!--        android:name="android.support.v4.content.FileProvider"-->
+        <provider
+            android:authorities="com.gosuncn.zfyhwapidemo.fileprovider"
+            android:name="android.support.v4.content.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+
+        <activity
+            android:name="com.gosuncn.zfyhwapidemo.activity.UpdateActivity"
+            android:label="@string/update_activity_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.gosuncn.zfyhwapidemo.activity.NvActivity"
+            android:label="@string/update_activity_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+            </intent-filter>
+        </activity>
+
+
+	        <receiver android:name="com.gosuncn.zfyfw.broadcast.SystemEventReceiver"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="RestartSerivcesForSystemEventReceiver" />
+            </intent-filter>
+        </receiver>
+
+        <!-- PLM14773, install app quietly, wmd, 2020.0720 -->
+        <receiver
+            android:name=".module.appinstall.InstallResultReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.content.pm.extra.STATUS"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".module.appinstall.UninstallResultReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.content.pm.extra.STATUS"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.gosuncn.zfyfwapidemo.activity.ApnTestActivity"
+		android:label="apn">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.gosuncn.zfyfw.EmptyActivity"
+            android:theme="@android:style/Theme.NoDisplay"
+            android:label="empty1">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.gosuncn.zfyfw.VpnEstablishPrepareActivity"
+            android:label="empty2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.gosuncn.zfyfwapidemo.activity.ApnAddActivity"/>
+        <service android:name="com.gosuncn.zfyfw.service.MainService">
+            <intent-filter>
+                <action android:name="com.gosuncn.zfyfw.service.MainService"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.gosuncn.zfyfw.service.VpnConnectService"
+            android:permission="android.permission.BIND_VPN_SERVICE">
+            <intent-filter>
+                <action android:name="android.net.VpnService"/>
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

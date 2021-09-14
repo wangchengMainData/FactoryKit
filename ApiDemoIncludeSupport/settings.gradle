@@ -1,0 +1,3 @@
+include ':GosuncnZFYSDKModule'
+include ':app', ':GosuncnZFYFWSupport'
+rootProject.name='GosuncnZFYFWApidemo'

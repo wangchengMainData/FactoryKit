@@ -1,0 +1,19 @@
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <external-path name="external_files" path="."/>
+
+
+<!--    <external-path path="." name="external_storage_root" />
+    <external-path path="Download/" name="external_storage_download" />
+    <root-path path="." name="sd_scard" />
+    <root-path path="update" name="sd_scard/" />-->
+
+    <root-path path="" name="cmrootfile" />
+    <!--    <files-path path="" name="cmfiles" />
+        <cache-path path="" name="cmcache" />-->
+    <external-path path="" name="cmexternal" />
+    <external-files-path path="" name="cmexternalfile" />
+<!--    <external-cache-path path="" name="cmexternalcache" />-->
+</paths>
+
+
+

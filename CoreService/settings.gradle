@@ -1,0 +1,6 @@
+include ':app'
+rootProject.name='GosuncnFWService'
+include ':GosuncnZFYFWSupport'
+project(':GosuncnZFYFWSupport').projectDir = new File(settingsDir, '../GosuncnZFYFWApiDemo/GosuncnZFYFWSupport')
+// settingsDir是指settings.gradle文件目录
+// project(':moduleLib').projectDir = new File('D:/ProjectA/moduleLib') // 绝对路径

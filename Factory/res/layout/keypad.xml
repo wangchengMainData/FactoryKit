@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (c) 2011-2014, Qualcomm Technologies, Inc. All Rights Reserved.
+  Qualcomm Technologies Proprietary and Confidential.
+-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+>
+    <TextView
+        android:id="@+id/keypad_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/keypad_text"
+        android:textSize="20dip"
+        android:layout_margin="15px"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/volume_up"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/keypad_volume_up"
+        android:layout_margin="5px"
+        android:textSize="20dip"
+        android:visibility="gone" />
+    <TextView
+        android:id="@+id/volume_down"
+        android:text="@string/keypad_volume_down"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_margin="5px"
+        android:textSize="20dip"
+        android:visibility="gone" />
+    <TextView
+        android:id="@+id/focus"
+        android:text="@string/keypad_focus"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_margin="5px"
+        android:textSize="20dip"
+        android:visibility="gone" />
+    <TextView
+        android:id="@+id/camera"
+        android:text="@string/keypad_camera"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_margin="5px"
+        android:textSize="20dip"
+        android:visibility="gone" />
+    <TextView
+        android:id="@+id/keypad_record"
+        android:text="@string/keypad_record"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_margin="5px"
+        android:textSize="20dip"
+        android:visibility="gone" />
+    <TextView
+        android:id="@+id/keypad_power"
+        android:text="@string/keypad_power"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_margin="5px"
+        android:textSize="20dip"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/keypad_menu"
+        android:text="@string/keypad_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_margin="5px"
+        android:textSize="20dip"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/keypad_home"
+        android:text="@string/keypad_home"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_margin="5px"
+        android:textSize="20dip"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/keypad_back"
+        android:text="@string/keypad_back"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_margin="5px"
+        android:textSize="20dip"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/keypad_ptt"
+        android:text="@string/keypad_ptt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_margin="5px"
+        android:textSize="20dip"
+        android:visibility="gone" />
+    <TextView
+        android:id="@+id/keypad_video"
+        android:text="@string/keypad_video"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_margin="5px"
+        android:textSize="20dip"
+        android:visibility="gone" />
+    <TextView
+        android:id="@+id/keypad_mark"
+        android:text="@string/keypad_mark"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_margin="5px"
+        android:textSize="20dip"
+        android:visibility="gone" />
+    <TextView
+        android:id="@+id/keypad_sos"
+        android:text="@string/keypad_sos"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_margin="5px"
+        android:textSize="20dip"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="15px"
+    >
+        <Button
+            android:id="@+id/pass"
+            android:text="@string/pass"
+            android:textSize="20dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+        ></Button>
+        <Button
+            android:id="@+id/fail"
+            android:text="@string/fail"
+            android:textSize="20dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+        ></Button>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">GSFWService</string>
+    <string name="action_settings">Settings</string>
+    <string name="nv_write">NV Write</string>
+    <string name="nv_read">NV Read</string>
+    <string name="set_lock_passwd">Set Lock Password</string>
+    <string name="rm_lock_passwd">Remove Lock Password</string>
+
+    <string name="app_install_activity_name">App Install</string>
+    <string name="update_activity_name">Update</string>
+
+    <string name="gxx_tpm_report_has_verfied">可信</string>
+    <string name="gxx_tpm_report_has_no_verfied">不可信</string>
+
+</resources>

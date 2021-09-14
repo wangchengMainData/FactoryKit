@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/main_bg"
+        android:background="@android:color/background_dark"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/progress_container"
+        >
+
+        <com.gosuncn.zfyfw.view.RingProgressView
+            android:id="@+id/ringProgress"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_centerInParent="true"
+            app:currentProgress="0"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            app:maxProgress="100"
+            app:ringColor="@android:color/background_dark"
+            app:ringProgressColor="#00A9CE"
+            app:ringWidth="4dp"
+            app:textColor="#FFFFFF"
+            app:textSize="28sp" />
+
+        <ImageView
+            android:id="@+id/chager_icon"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignRight="@+id/ringProgress"
+            android:layout_alignLeft="@+id/ringProgress"
+            android:layout_alignBottom="@+id/ringProgress"
+            android:layout_marginBottom="12dp"
+            android:src="@drawable/chager"
+           />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

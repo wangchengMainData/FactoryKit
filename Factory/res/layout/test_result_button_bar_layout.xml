@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (c) 2011-2014, Qualcomm Technologies, Inc. All Rights Reserved.
+  Qualcomm Technologies Proprietary and Confidential.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/test_result_pass"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/test_result_button_bar_height"
+        android:layout_weight="1"
+        android:text="@string/pass"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge" >
+    </Button>
+
+    <Button
+        android:id="@+id/test_result_fail"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/test_result_button_bar_height"
+        android:layout_weight="1"
+        android:text="@string/fail"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge" >
+    </Button>
+
+</LinearLayout>

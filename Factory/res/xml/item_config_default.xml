@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (c) 2011-2014, Qualcomm Technologies, Inc. All Rights Reserved.
+  Qualcomm Technologies Proprietary and Confidential.
+-->
+<FactoryTest>
+
+    <FunctionItem
+        name="指示灯"
+        auto="false"
+        enable="true"
+        packageName="com.gosuncn.zfyfactorytest.Led"
+        parameter="red=red;green=green;blue=blue;" >
+    </FunctionItem>
+    <FunctionItem
+        name="闪光灯"
+        auto="false"
+        enable="true"
+        packageName="com.gosuncn.zfyfactorytest.Flashlight"
+        parameter="path=/sys/class/flashlight/flash_led" >
+    </FunctionItem>
+    <FunctionItem
+        name="红外灯"
+        auto="false"
+        enable="true"
+        packageName="com.gosuncn.zfyfactorytest.IRLed"
+        parameter="path=/sys/class/gpio/irled" >
+    </FunctionItem>
+    <FunctionItem
+        name="滤光片"
+        auto="false"
+        enable="true"
+        packageName="com.gosuncn.zfyfactorytest.IRCut"
+        parameter="path=/sys/class/gpio/ircut" >
+    </FunctionItem>
+<!--    <FunctionItem
+        name="KeypadBacklight"
+        auto="true"
+        enable="true"
+        packageName="com.gosuncn.zfyfactorytest.KeypadBacklight" >
+    </FunctionItem>-->
+    <FunctionItem
+        name="LCM"
+        auto="false"
+        enable="true"
+        packageName="com.gosuncn.zfyfactorytest.LCM" >
+    </FunctionItem>
+    <FunctionItem
+        name="背光"
+        auto="false"
+        enable="true"
+        packageName="com.gosuncn.zfyfactorytest.BackLight" >
+    </FunctionItem>
+    <FunctionItem
+        name="触摸屏"
+        auto="false"
+        enable="true"
+        packageName="com.gosuncn.zfyfactorytest.TouchPanelEdge" >
+    </FunctionItem>
+
+    <FunctionItem
+        name="TouchPanel Key"
+        auto="false"
+        enable="false"
+        packageName="com.gosuncn.zfyfactorytest.TouchPanelKey" >
+    </FunctionItem>
+    <FunctionItem
+        name="按键"
+        auto="false"
+        enable="true"
+        packageName="com.gosuncn.zfyfactorytest.Keypad"
+        parameter="KeyMode=4" >
+    </FunctionItem>
+    <FunctionItem
+        name="振动"
+        auto="false"
+        enable="true"
+        packageName="com.gosuncn.zfyfactorytest.Vibrate" >
+    </FunctionItem>
+
+    <FunctionItem
+        name="后置摄像头"
+        auto="false"
+        enable="true"
+        packageName="com.gosuncn.zfyfactorytest.CameraBack"
+        parameter="AutoFocus=true" >
+    </FunctionItem>
+    <FunctionItem
+        name="前置摄像头"
+        auto="false"
+        enable="true"
+        packageName="com.gosuncn.zfyfactorytest.CameraFront" >
+    </FunctionItem>
+
+    <FunctionItem
+        name="SIM卡"
+        auto="false"
+        enable="true"
+        packageName="com.gosuncn.zfyfactorytest.SIM1"
+        parameter="service=com.gosuncn.zfyfactorytest.SIM1.SIM1Service;ServiceDelay=9000;" >
+    </FunctionItem>
+<!--    <FunctionItem
+        name="SIM2"
+        auto="true"
+        enable="true"
+        packageName="com.gosuncn.zfyfactorytest.SIM2"
+        parameter="service=com.gosuncn.zfyfactorytest.SIM2.SIM2Service;ServiceDelay=9500;" >
+    </FunctionItem>-->
+
+    <FunctionItem
+        name="SD卡"
+        auto="false"
+        enable="true"
+        packageName="com.gosuncn.zfyfactorytest.SDCard"
+        parameter="service=com.gosuncn.zfyfactorytest.SDCard.SDCardService;ServiceDelay=1000;" >
+    </FunctionItem>
+    <FunctionItem
+        name="光感应"
+        auto="false"
+        enable="true"
+        packageName="com.gosuncn.zfyfactorytest.LightSensor"
+        parameter="service=com.gosuncn.zfyfactorytest.LightSensor.LightSensorService;ServiceDelay=3000;" >
+    </FunctionItem>
+    <FunctionItem
+        name="重力感应"
+        auto="false"
+        enable="true"
+        packageName="com.gosuncn.zfyfactorytest.GSensor" >
+    </FunctionItem>
+    <FunctionItem
+        name="磁力感应"
+        auto="false"
+        enable="true"
+        packageName="com.gosuncn.zfyfactorytest.MSensor" >
+    </FunctionItem>
+<!--    <FunctionItem-->
+<!--        name="陀螺仪"-->
+<!--        auto="false"-->
+<!--        enable="true"-->
+<!--        packageName="com.gosuncn.zfyfactorytest.Gyroscope" >-->
+<!--    </FunctionItem>-->
+
+<!--    <FunctionItem
+        name="距离感应"
+        auto="false"
+        enable="true"
+        packageName="com.gosuncn.zfyfactorytest.PSensor"
+        parameter="service=com.gosuncn.zfyfactorytest.PSensor.PSensorService;ServiceDelay=3000;" >
+    </FunctionItem>-->
+
+    <FunctionItem
+        name="扬声器"
+        auto="false"
+        enable="true"
+        packageName="com.gosuncn.zfyfactorytest.Speaker" >
+    </FunctionItem>
+    <FunctionItem
+        name="麦克风"
+        auto="false"
+        enable="true"
+        packageName="com.gosuncn.zfyfactorytest.Handset" >
+    </FunctionItem>
+
+<!--    <FunctionItem
+        name="FmRadio"
+        auto="true"
+        enable="true"
+        packageName="com.gosuncn.zfyfactorytest.FM"
+        parameter="forceHeadset=true" >
+    </FunctionItem>-->
+
+    <FunctionItem
+        name="WiFi"
+        auto="false"
+        enable="true"
+        packageName="com.gosuncn.zfyfactorytest.WiFi" >
+    </FunctionItem>
+    <FunctionItem
+        name="蓝牙"
+        auto="false"
+        enable="true"
+        packageName="com.gosuncn.zfyfactorytest.Bluetooth" >
+    </FunctionItem>
+    <FunctionItem
+        name="GPS"
+        auto="false"
+        enable="true"
+        packageName="com.gosuncn.zfyfactorytest.GPS"
+        parameter="service=com.gosuncn.zfyfactorytest.GPS.GpsService;timeout=150000;ServiceDelay=1500" >
+    </FunctionItem>
+
+    <FunctionItem
+        name="NFC"
+        auto="false"
+        enable="true"
+        packageName="com.gosuncn.zfyfactorytest.NFC"
+        parameter="service=intent.NFC.NfcService;ServiceDelay=5000" >
+    </FunctionItem>
+
+    <FunctionItem
+        name="电池"
+        auto="false"
+        enable="true"
+        packageName="com.gosuncn.zfyfactorytest.Battery"
+        parameter="service=com.gosuncn.zfyfactorytest.Battery.BatteryService;" >
+    </FunctionItem>
+
+    <FunctionItem
+        name="OTG"
+        auto="false"
+        enable="true"
+        packageName="com.gosuncn.zfyfactorytest.OTG" >
+    </FunctionItem>
+        <FunctionItem
+        name="体温测试"
+        auto="true"
+        enable="false"
+        packageName="com.gosuncn.zfyfactorytest.BodyTemp" >
+    </FunctionItem>
+
+
+    <FunctionItem
+        name="主板信息"
+        auto="false"
+        enable="true"
+        packageName="com.gosuncn.zfyfactorytest.DeviceInfo" >
+    </FunctionItem>
+    <FunctionItem
+        name="SN号"
+        auto="false"
+        enable="true"
+        packageName="com.gosuncn.zfyfactorytest.SNNumber" >
+    </FunctionItem>
+    <FunctionItem
+        name="软件版本"
+        auto="false"
+        enable="true"
+        packageName="com.gosuncn.zfyfactorytest.SWVersion" >
+    </FunctionItem>
+    <FunctionItem
+        name="测试报告"
+        auto="false"
+        enable="true"
+        packageName="com.gosuncn.zfyfactorytest.TestReport" >
+    </FunctionItem>
+
+<!--    <FunctionItem
+        name="*FuelGaugeCalibration"
+        auto="true"
+        enable="false"
+        packageName="com.gosuncn.zfyfactorytest.FuelGaugeCalibration" >
+    </FunctionItem>-->
+<!--    <FunctionItem
+        name="Serial Port0"
+        auto="true"
+        enable="true"
+        packageName="com.gosuncn.zfyfactorytest.android_serialport_api.sample0">
+    </FunctionItem>
+    <FunctionItem
+        name="Serial Port1"
+        auto="true"
+        enable="true"
+        packageName="com.gosuncn.zfyfactorytest.android_serialport_api.sample">
+    </FunctionItem>-->
+
+</FactoryTest>

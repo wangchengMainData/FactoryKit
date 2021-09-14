@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ApiTest>
+    <ApiItem
+        key="led"
+        name="指示灯"
+        enable="true"
+        classname="com.gosuncn.zfyhwapidemo.activity.LedActivity" >
+    </ApiItem>
+    <ApiItem
+        key="key"
+        name="按键"
+        enable="true"
+        classname="com.gosuncn.zfyhwapidemo.activity.KeyActivity" >
+    </ApiItem>
+    <ApiItem
+        key="bodytemp"
+        name="测温"
+        enable="true"
+        classname="com.gosuncn.zfyhwapidemo.activity.BodyTempActivity" >
+    </ApiItem>
+
+    <ApiItem
+        key="deviceinfo"
+        name="设备信息"
+        enable="true"
+        classname="com.gosuncn.zfyhwapidemo.activity.DeviceInfoActivity" >
+    </ApiItem>
+    <ApiItem
+        key="appportal"
+        name="系统应用"
+        enable="true"
+        classname="com.gosuncn.zfyhwapidemo.activity.AppPortalActivity" >
+    </ApiItem>
+    <ApiItem
+        key="usb_key"
+        name="U盘"
+        enable="true"
+        classname="com.gosuncn.zfyhwapidemo.activity.USBActivity" >
+    </ApiItem>
+    <ApiItem
+        key="server_key"
+        name="Server"
+        enable="true"
+        classname="com.gosuncn.zfyhwapidemo.activity.ServerActivity" >
+    </ApiItem>
+    <ApiItem
+        key="ota_key"
+        name="OTA"
+        enable="true"
+        classname="com.gosuncn.zfyhwapidemo.activity.OTAActivity" >
+    </ApiItem>
+    <ApiItem
+        key="iptables_key"
+        name="Iptables"
+        enable="true"
+        classname="com.gosuncn.zfyhwapidemo.activity.IptablesActivity" >
+    </ApiItem>
+<!--    <ApiItem
+        key="app_install_key"
+        name="App Install"
+        enable="true"
+        classname="com.gosuncn.zfyhwapidemo.activity.AppInstallActivity" >
+    </ApiItem>-->
+
+</ApiTest>

@@ -1,0 +1,695 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Common string -->
+    <string name="ok">确认</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="pass">成功</string>
+    <string name="fail">失败</string>
+    <string name="cancel">取消</string>
+    <string name="testing">正在测试...</string>
+    <string name="initialize">正在初始化...</string>
+    <string name="app_name">工厂测试</string>
+    <string name="start">开始</string>
+    <string name="scan">扫描</string>
+    <string name="device_open_fail">设备打开失败!</string>
+    <string name="service_get_fail">服务获取失败!</string>
+    <string name="sensor_get_fail">传感器获取失败!</string>
+    <string name="sensor_register_fail">传感器注册失败!</string>
+    <string name="test_pass">测试通过</string>
+    <string name="scanning">扫描中...</string>
+    <string name="enabling">正在启用...</string>
+    <string name="disabling">正在禁用...</string>
+    <string name="turning_on">打开...</string>
+    <string name="turning_off">关闭...</string>
+    <string name="off">关闭</string>
+    <string name="shake_hint">请用手覆盖光感应传感器至少2次。</string>
+    <string name="remove_headset">请移除耳机</string>
+    <string name="insert_headset">请插入耳机</string>
+    <string name="stop">停止</string>
+    <string name="play">播放</string>
+    <string name="record">录音</string>
+    <string name="time_out">超时!</string>
+    <string name="back_prompt">请再次点击返回按键以退出</string>
+
+    <!-- ControlCenter -->
+    <string name="clean_state">清除标记</string>
+    <string name="uninstall">卸载</string>
+    <string name="control_center_quit_confirm">请确认是否退出?</string>
+    <!-- Led -->
+    <!-- <string name="led_name">TriColor Led</string> -->
+    <!-- <string name="led_text">Light test sequence: red, green, blue</string> -->
+    <string name="led_name">指示灯</string>
+    <string name="led_tri_text">指示灯依次亮起:红,黄,熄灭</string>
+    <string name="led_dual_text">指示灯依次亮起:红,黄,熄灭</string>
+    <string name="led_confirm">指示灯显示正确吗?</string>
+    <!-- Flashlight -->
+    <string name="flashlight_name">闪光灯</string>
+    <string name="flashlight_confirm">闪光灯打开了吗?</string>
+    <!-- KeypadBacklight -->
+    <string name="keypadbacklight_name">KeypadBacklight</string>
+    <string name="keypadbacklight_confirm">Is the KeypadBacklight on?</string>
+    <!-- SIM1 -->
+    <string name="sim1_name">SIM1</string>
+    <string name="sim_status_absent">无卡</string>
+    <string name="sim_status_unknown">已插入，未知状态</string>
+    <string name="sim_status_network_locked">已插入，需要NetworkPIN解锁</string>
+    <string name="sim_status_pin_required">已插入，需要PIN解锁</string>
+    <string name="sim_status_puk_required">已插入，需要PUK解锁</string>
+    <string name="sim_status_ready">已插入，状态良好</string>
+    <string name="sim_status">SIM卡状态： </string>
+    <string name="sim_iccid">SIM卡ICCID： </string>
+    <string name="sim_operator_code">移动国家码和网络码: </string>
+    <string name="status_unknown">未知</string>
+
+    <!-- SIM2 -->
+    <string name="sim2_name">SIM2</string>
+    <string name="sim_not_existed">无SIM卡</string>
+    <!-- TouchPanelEdge -->
+    <string name="touchpanel_edge_name">触摸屏边缘</string>
+    <!-- TouchPanelKey -->
+    <string name="touchpanel_key_name">触摸屏按键</string>
+    <!-- Keypad -->
+    <string name="keypad_name">按键</string>
+    <string name="keypad_text">请按下下面的按键:</string>
+    <string name="keypad_volume_up">音量上</string>
+    <string name="keypad_volume_down">音量下</string>
+    <string name="keypad_focus">FOCUS</string>
+    <string name="keypad_camera">相机</string>
+    <string name="keypad_power">电源</string>
+    <string name="keypad_menu">菜单</string>
+    <string name="keypad_home">HOME</string>
+    <string name="keypad_back">返回</string>
+    <string name="keypad_record">录音</string>
+    <string name="keypad_ptt">PTT</string>
+    <string name="keypad_video">录像</string>
+    <string name="keypad_mark">标记</string>
+    <string name="keypad_sos">SOS</string>
+    <!-- CameraBack -->
+    <string name="cameraback_name">后置摄像头</string>
+    <string name="cameraback_takepicture">拍照</string>
+    <string name="cameraback_fail_open">相机打开失败，请确认!</string>
+    <string name="autofocus_fail">自动对焦失败</string>
+    <string name="cameraback_cameratocode">请将后摄对准二维码</string>
+    <string name="cameraback_codeconfirm">已识别到二维码</string>
+    <!-- CameraFront -->
+    <string name="camerafront_name">前置摄像头</string>
+    <string name="camerafront_takepicture">拍照</string>
+    <string name="camerafront_cameratocode">请将前摄对准二维码</string>
+    <!-- LCM -->
+    <string name="lcm_name">LCM</string>
+    <string name="lcm_confirm">请确认结果</string>
+    <!-- Vibrator -->
+    <string name="vibrate_name">振动</string>
+    <string name="vibrate_confirm">请确认结果</string>
+    <string name="vibrate_hint">振动中...</string>
+    <!-- PSensor -->
+    <string name="psensor_name">距离感应</string>
+    <string name="psensor_title">请遵照指示，每一步都必须7秒内完成</string>
+    <string name="psensor_to_cover">覆盖传感器大于1秒</string>
+    <string name="psensor_to_uncover">不覆盖传感器超过1s</string>
+    <string name="psensor_uncovered">未覆盖</string>
+    <string name="psensor_covered">被覆盖</string>
+    <string name="psensor_verifying">检验中...</string>
+    <string name="psensor_sensor_unstable_fail">传感器不稳定!</string>
+    <!-- GSensor -->
+    <string name="gsensor_name">重力感应</string>
+    <string name="gsensor_tips">竖立,平放,侧立,观察重力变化!</string>
+    <!-- MSensor -->
+    <string name="msensor_name">磁力感应</string>
+    <string name="msensor_south">正南</string>
+    <string name="msensor_west">正西</string>
+    <string name="msensor_east">正东</string>
+    <string name="msensor_north">正北</string>
+    <string name="msensor_southwest">西南</string>
+    <string name="msensor_northwest">西北</string>
+    <string name="msensor_northeast">东北</string>
+    <string name="msensor_southeast">东南</string>
+    <string name="msensor_degree">°</string>
+    <!-- Gyroscope -->
+    <string name="gyroscope_name">陀螺仪</string>
+    <!-- LightSensor -->
+    <string name="lightsensor_name">光感应</string>
+    <string name="lightsensor_summary">光线强度：</string>
+    <string name="lightsensor_tips">请分别在明暗环境下查看光感指数</string>
+    <!-- SDCard -->
+    <string name="sdcard_name">SD卡</string>
+    <string name="sdcard_inter_tips">已检测到内部SD卡:</string>
+    <string name="sdcard_external_tips">已检测到外部SD卡:</string>
+    <string name="sdcard_usage">空间使用量: </string>
+    <string name="sdcard_unmounted">sd卡未装载!</string>
+    <string name="sdcard_confirm">插入SD卡了吗?</string>
+    <string name="sdcard_to_insert">请插入sd卡</string>
+    <!-- Bluetooth -->
+    <string name="bluetooth_name">Bluetooth</string>
+    <string name="bluetooth_scan_start">扫描设备中...</string>
+    <string name="bluetooth_scan_finish">完成扫描</string>
+    <string name="bluetooth_turning_on">打开蓝牙...</string>
+    <string name="bluetooth_scan_null">未发现设备</string>
+    <!-- WiFi -->
+    <string name="wifi_name">WiFi</string>
+    <string name="wifi_text">WIFI启动扫描，测试在30秒内结束，请稍候。</string>
+    <string name="wifi_scan_failed">扫描失败!</string>
+    <string name="wifi_is_closing">WiFi正在关闭，即将重启扫描，请稍等片刻。</string>
+    <string name="wifi_scan_null">没有发现AP! 即将重启扫描，请稍等片刻。</string>
+    <string name="wifi_state_unknown">WiFi状态不对，请重试。</string>
+    <string name="wifi_scan_find_ap">"发现AP, AP列表：\n"</string>
+    <!-- Handset -->
+    <string name="handsetloopback_name">麦克风</string>
+    <string name="handsetloopback_start_record">开始录音</string>
+    <string name="handsetloopback_volume">音量</string>
+    <string name="handsetloopback_click_start">点击开始录音测试</string>
+    <string name="handsetloopback_stop_to_play">停止录音并播放</string>
+    <string name="handsetloopback_recording">录音中...</string>
+    <string name="handsetloopback_playing">播放中...</string>
+    <string name="handsetloopback_record_again">播放结束，点击开始录音可以继续测试</string>
+
+    <string name="handset_name">Handset</string>
+    <string name="handset_hint">Handset audio loopback testing...</string>
+    <string name="handset_loopback">Handset audio loopback testing...</string>
+    <string name="handset_playing">Replaying now, please listen to the receiver.</string>
+    <string name="handset_confirm">Do you hear the sound?</string>
+    <string name="handset_record_first">Please click Record button first</string>
+    <string name="handset_replay_end">Have reached the end.</string>
+    <string name="handset_to_record">Click Record button to record sound.</string>
+    <string name="handset_recording">Now recording, please say some words to mic and
+        click Stop button to stop.</string>
+    <!-- Headset -->
+    <string name="headset_name">Headset</string>
+    <string name="headset_hint">Headset</string>
+    <string name="headset_recording">Now recording, please say some words to mic and
+        click Stop button to stop.</string>
+    <string name="headset_playing">Replaying now, please listen to the receiver.</string>
+    <string name="headset_confirm">Do you hear the sound?</string>
+    <string name="headset_record_first">Please click Record button first</string>
+    <string name="headset_replay_end">Have reached the end.</string>
+    <string name="headset_to_record">Click Record button to record sound.</string>
+    <!-- Speaker -->
+    <string name="speaker_name">扬声器</string>
+    <string name="speaker_hint">你听到音乐播放了吗?</string>
+    <string name="speaker_confirm">你听到声音了吗?</string>
+    <string name="speaker_playing">正在播放...</string>
+    <string name="speaker_play_first">请点击播放按钮</string>
+    <string name="speaker_to_play">点击播放按钮开始播放</string>
+    <string name="speaker_recording">正在录音，请说话</string>
+    <!-- GPS -->
+    <string name="gps_name">GPS</string>
+    <string name="gps_enable_first">请先打开GPS</string>
+    <!-- FM -->
+    <string name="fm_name">FmRadio</string>
+    <string name="fm_search">Search</string>
+    <string name="fm_confirm">Can you hear the sound ?</string>
+    <!-- Battery -->
+    <string name="battery_name">电池</string>
+    <string name="battery_info_status_label">充电状态: </string>
+    <string name="battery_info_scale_label">电池电量: </string>
+    <string name="battery_info_level_label">当前电量: </string>
+    <string name="battery_info_health_label">电源状况: </string>
+    <string name="battery_info_technology_label">电源技术: </string>
+    <string name="battery_info_voltage_label">当前电压: </string>
+    <string name="battery_info_voltage_units">mV</string>
+    <string name="battery_info_temperature_label">电源温度: </string>
+    <string name="battery_info_current_label">电池电流: </string>
+    <string name="battery_info_average_current_label">电池端平均电流:</string>
+    <string name="battery_info_temperature_units">° C</string>
+    <string name="battery_info_uptime">自启动的时间: </string>
+    <string name="battery_info_awake_battery">对电池唤醒时间:</string>
+    <string name="battery_info_awake_plugged">充电时间:</string>
+    <string name="battery_info_screen_on">屏幕打开时间:</string>
+    <string name="battery_info_status_unknown">未知</string>
+    <string name="battery_info_status_charging">充电</string>
+    <string name="battery_info_status_charging_ac">(适配器)</string>
+    <string name="battery_info_status_charging_usb">(USB)</string>
+    <string name="battery_info_status_discharging">放电</string>
+    <string name="battery_info_status_not_charging">未充电</string>
+    <string name="battery_info_status_full">已充满</string>
+    <string name="battery_info_health_unknown">未知</string>
+    <string name="battery_info_health_good">很好</string>
+    <string name="battery_info_health_overheat">过热</string>
+    <string name="battery_info_health_dead">Dead</string>
+    <string name="battery_info_health_over_voltage">电压过高</string>
+    <string name="battery_info_health_unspecified_failure">未知错误</string>
+    <string name="battery_info_temperature_c">℃</string>
+    <!-- FuelGaugeCalibration -->
+    <string name="fuelgauge_name">FuelGaulge Calibration</string>
+    <string name="fuelgauge_hint">FuelGauge Calibration will be completed within 30s,
+        please wait...</string>
+    <string name="fuelgauge_processing">Processing...</string>
+    <!-- NFC -->
+    <string name="nfc_name">NFC</string>
+    <string name="nfc_not_available">NFC不可用</string>
+    <string name="nfc_enable_first">打开NFC...</string>
+    <string name="nfc_enable_fail">无法打开NFC</string>
+    <string name="nfc_scanning">NFC已打开，正在扫描中，请将NFC标签靠近设备背面</string>
+    <string name="nfc_tag">NFC已打开，正在扫描中，请将NFC标签靠近设备背面\n已检测到NFC设备，标签内容：</string>
+    <string name="nfc_enabling">即将打开NFC，请稍候</string>
+
+    <string name="about_msg">
+Serial Port API sample v1.1\n
+\n
+This program is the sample application to test the serial communication function.\n
+\n
+Copyright belongs to Quectel Wireless Solutions Co., Ltd.
+\n
+	</string>
+    <string name="error_configuration">Please configure your serial port first.</string>
+    <string name="error_security">You do not have read/write permission to the serial
+		port.</string>
+    <string name="error_unknown">The serial port can not be opened for an unknown
+		reason.</string>
+
+    <!-- serial port -->
+    <string name="loopback0">Sent bytes</string>
+    <string name="loopback1">0</string>
+    <string name="loopback2">Received back</string>
+    <string name="loopback3">Lost bytes</string>
+    <string name="loopback4">Corrupted bytes</string>
+
+    <string name="main_serial0">Setup</string>
+    <string name="main_serial1">Console</string>
+    <string name="main_serial2">Loopback</string>
+    <string name="main_serial3">Send 01010101</string>
+    <string name="main_serial4">About</string>
+    <string name="main_serial5">Quit</string>
+
+    <string name="sending01010101">Sending 01010101...</string>
+
+    <string name="serialport_name0">Serial Port0</string>
+    <string name="serialport_name1">Serial Port1</string>
+
+    <!-- wmd -->
+    <string name="aging_name">老化测试</string>
+    <string name="auto_test_name">整机测试</string>
+    <string name="quick_test_name">快速测试</string>
+    <string name="factory_reset_text">恢复出厂</string>
+    <string name="factory_reset_summary">是否执行?</string>
+    <string name="factory_flag_p">强制标志位通过</string>
+    <string name="factory_flag_u">解除强制标志位通过</string>
+
+    <!-- 红外灯 -->
+    <string name="irled_name">红外灯</string>
+    <string name="irled_confirm">红外灯亮了吗？</string>
+
+    <!-- 背光 -->
+    <string name="backlight_name">背光</string>
+    <string name="backlight_confirm">背光正常亮灭吗？</string>
+
+    <!-- OTG -->
+    <string name="OTG_name">OTG</string>
+    <string name="OTG_confirm">OTG正常吗?</string>
+    <string name="OTG_init">开始检测OTG设备</string>
+    <string name="OTG_fail">未检测到OTG设备</string>
+    <string name="OTG_ok">已成功检测到OTG设备</string>
+    <string name="storage_volume_summary">检测到OTG存储设备，空间使用情况如下：\n%1$s / %2$s</string>
+    <!-- 主板信息 -->
+    <string name="DeviceInfo_name">主板信息</string>
+    <string name="DeviceInfo_confirm">主板信息正常吗?</string>
+    <!-- SN号 -->
+    <string name="SNNumber_name">SN号</string>
+    <string name="SNNumber_confirm">SN号正常吗?</string>
+    <!-- 软件版本 -->
+    <string name="SWVersion_name">软件版本</string>
+    <string name="SWVersion_confirm">软件版本正常吗?</string>
+    <!-- 测试报告 -->
+    <string name="TestReport_name">测试报告</string>
+    <string name="TestReport_confirm">测试报告正常吗?</string>
+    <string name="TestReport_title_pass">测试成功项：</string>
+    <string name="TestReport_title_fail">测试失败项：</string>
+    <string name="TestReport_title_untest">未测试项：</string>
+    <!-- 老化测试 -->
+    <string name="agingtest_name">"老化测试"</string>
+    <string name="agingtest_lcd_cb">"LCD"</string>
+    <string name="agingtest_spk_cb">"喇叭"</string>
+    <string name="agingtest_vbr_cb">"震动"</string>
+    <string name="agingtest_inf_cb">"红外灯"</string>
+    <string name="agingtest_fls_cb">"闪光灯"</string>
+    <string name="agingtest_start_bt">"老化测试"</string>
+    <string name="agingtest_text">"老化测试进行中"</string>
+    <string name="timer">计时器</string>
+    <!-- 工程相机 -->
+    <string name="EngineeringCamera_name">"工程相机"</string>
+    <string name="takepicture">"拍照"</string>
+    <string name="soundrecord">"录音"</string>
+    <string name="videotape">"录像"</string>
+    <!--framework-->
+    <string name="warning_tips">警告:本机尚未通过完整测试!</string>
+    <!--body temp-->
+    <string name="bodytemp_name">体温测试</string>
+    <string name="bodytemp_temp">体温：</string>
+    <string name="bodytemp_start">体温测试</string>
+    <!--ircut-->
+    <string name="ircut_name">滤光片</string>
+    <string name="ircut_confirm">点击按钮画面是否有变化，是否听到切换声音？</string>
+
+    <string name="gxx_enable_factory_reset">功能被禁止</string>
+</resources>
+<!--
+  Copyright (c) 2011-2014, Qualcomm Technologies, Inc. All Rights Reserved.
+  Qualcomm Technologies Proprietary and Confidential.
+-->
+<!-- REQ116,lights,wmd,2020.0407 -->
+<!--<resources>-->
+
+<!--    &lt;!&ndash; Common string &ndash;&gt;-->
+<!--    <string name="ok">OK</string>-->
+<!--    <string name="yes">Yes</string>-->
+<!--    <string name="no">No</string>-->
+<!--    <string name="pass">Pass</string>-->
+<!--    <string name="fail">Fail</string>-->
+<!--    <string name="cancel">Cancel</string>-->
+<!--    <string name="testing">Testing...</string>-->
+<!--    <string name="initialize">Initializing...</string>-->
+<!--    <string name="app_name">FactoryKit</string>-->
+<!--    <string name="start">Start</string>-->
+<!--    <string name="scan">Scan</string>-->
+<!--    <string name="device_open_fail">Device open fail!</string>-->
+<!--    <string name="service_get_fail">Sevice get fail!</string>-->
+<!--    <string name="sensor_get_fail">Sensor get fail!</string>-->
+<!--    <string name="sensor_register_fail">Sensor register fail!</string>-->
+<!--    <string name="test_pass">Test pass</string>-->
+<!--    <string name="scanning">Scanning...</string>-->
+<!--    <string name="enabling">Enabling...</string>-->
+<!--    <string name="disabling">Disabling...</string>-->
+<!--    <string name="turning_on">Turning on...</string>-->
+<!--    <string name="turning_off">Turning off...</string>-->
+<!--    <string name="off">Off</string>-->
+<!--    <string name="shake_hint">Please cover light sensor with your hands at least 2-->
+<!--        times.</string>-->
+<!--    <string name="remove_headset">Please remove headset</string>-->
+<!--    <string name="insert_headset">Please insert headset</string>-->
+<!--    <string name="stop">Stop</string>-->
+<!--    <string name="play">Play</string>-->
+<!--    <string name="record">Record</string>-->
+<!--    <string name="time_out">Time out!</string>-->
+<!--    <string name="back_prompt">Press BACK again to quit</string>-->
+
+<!--    &lt;!&ndash; ControlCenter &ndash;&gt;-->
+<!--    <string name="clean_state">Clean Test State</string>-->
+<!--    <string name="uninstall">Uninstall</string>-->
+<!--    <string name="control_center_quit_confirm">Do you want to exit?</string>-->
+<!--    &lt;!&ndash; Led &ndash;&gt;-->
+<!--    &lt;!&ndash; <string name="led_name">TriColor Led</string> &ndash;&gt;-->
+<!--    &lt;!&ndash; <string name="led_text">Light test sequence: red, green, blue</string> &ndash;&gt;-->
+<!--    <string name="led_name">LED</string>-->
+<!--    <string name="led_tri_text">LED test sequence: green, red, yellow</string>-->
+<!--    <string name="led_dual_text">LED test sequence: green, red, yellow</string>-->
+<!--    <string name="led_confirm">Is LED color correct?</string>-->
+<!--    &lt;!&ndash; Flashlight &ndash;&gt;-->
+<!--    <string name="flashlight_name">Flashlight</string>-->
+<!--    <string name="flashlight_confirm">Is the Flashlight on?</string>-->
+<!--    &lt;!&ndash; KeypadBacklight &ndash;&gt;-->
+<!--    <string name="keypadbacklight_name">KeypadBacklight</string>-->
+<!--    <string name="keypadbacklight_confirm">Is the KeypadBacklight on?</string>-->
+<!--    &lt;!&ndash; SIM1 &ndash;&gt;-->
+<!--    <string name="sim1_name">SIM1</string>-->
+<!--    <string name="sim_status_absent">无卡</string>-->
+<!--    <string name="sim_status_unknown">已插入，未知状态</string>-->
+<!--    <string name="sim_status_network_locked">已插入，需要NetworkPIN解锁</string>-->
+<!--    <string name="sim_status_pin_required">已插入，需要PIN解锁</string>-->
+<!--    <string name="sim_status_puk_required">已插入，需要PUK解锁</string>-->
+<!--    <string name="sim_status_ready">已插入，状态良好</string>-->
+<!--    <string name="sim_status">SIM卡状态： </string>-->
+<!--    <string name="sim_iccid">SIM卡ICCID： </string>-->
+<!--    <string name="sim_operator_code">移动国家码和网络码: </string>-->
+<!--    <string name="status_unknown">未知</string>-->
+
+<!--    &lt;!&ndash; SIM2 &ndash;&gt;-->
+<!--    <string name="sim2_name">SIM2</string>-->
+<!--    <string name="sim_not_existed">No SIM card</string>-->
+<!--    &lt;!&ndash; TouchPanelEdge &ndash;&gt;-->
+<!--    <string name="touchpanel_edge_name">TouchPanel Edge</string>-->
+<!--    &lt;!&ndash; TouchPanelKey &ndash;&gt;-->
+<!--    <string name="touchpanel_key_name">TouchPanel Key</string>-->
+<!--    &lt;!&ndash; Keypad &ndash;&gt;-->
+<!--    <string name="keypad_name">Keypad</string>-->
+<!--    <string name="keypad_text">Please press the following keys:</string>-->
+<!--    <string name="keypad_volume_up">VOLUME_UP</string>-->
+<!--    <string name="keypad_volume_down">VOLUME_DOWN</string>-->
+<!--    <string name="keypad_focus">FOCUS</string>-->
+<!--    <string name="keypad_camera">CAMERA</string>-->
+<!--    <string name="keypad_power">POWER</string>-->
+<!--    <string name="keypad_menu">MENU</string>-->
+<!--    <string name="keypad_home">HOME</string>-->
+<!--    <string name="keypad_back">BACK</string>-->
+<!--    <string name="keypad_record">RECORD</string>-->
+<!--    <string name="keypad_ptt">PTT</string>-->
+<!--    <string name="keypad_video">VIDEO</string>-->
+<!--    <string name="keypad_mark">MARK</string>-->
+<!--    <string name="keypad_sos">SOS</string>-->
+
+<!--    &lt;!&ndash; CameraBack &ndash;&gt;-->
+<!--    <string name="cameraback_name">CameraBack</string>-->
+<!--    <string name="cameraback_takepicture">Take picture</string>-->
+<!--    <string name="cameraback_fail_open">Camera open Fail, please Check Camera Installed-->
+<!--        Correctly!</string>-->
+<!--    <string name="autofocus_fail">AutoFocus Failed</string>-->
+<!--    &lt;!&ndash; CameraFront &ndash;&gt;-->
+<!--    <string name="camerafront_name">CameraFront</string>-->
+<!--    <string name="camerafront_takepicture">Take picture</string>-->
+<!--    &lt;!&ndash; LCM &ndash;&gt;-->
+<!--    <string name="lcm_name">LCM</string>-->
+<!--    <string name="lcm_confirm">Please choose</string>-->
+<!--    &lt;!&ndash; Vibrator &ndash;&gt;-->
+<!--    <string name="vibrate_name">Vibrator</string>-->
+<!--    <string name="vibrate_confirm">Please choose</string>-->
+<!--    <string name="vibrate_hint">Vibrating...</string>-->
+<!--    &lt;!&ndash; PSensor &ndash;&gt;-->
+<!--    <string name="psensor_name">Proximity Sensor</string>-->
+<!--    <string name="psensor_title">Please follow the instruction, and every step must be-->
+<!--        done within 7s</string>-->
+<!--    <string name="psensor_to_cover">Cover PSensor more than 1s</string>-->
+<!--    <string name="psensor_to_uncover">Uncover PSensor more than 1s</string>-->
+<!--    <string name="psensor_uncovered">Uncovered</string>-->
+<!--    <string name="psensor_covered">Covered</string>-->
+<!--    <string name="psensor_verifying">Verifying...</string>-->
+<!--    <string name="psensor_sensor_unstable_fail">PSensor unstable!</string>-->
+<!--    &lt;!&ndash; GSensor &ndash;&gt;-->
+<!--    <string name="gsensor_name">Gravity Sensor</string>-->
+<!--    <string name="gsensor_tips">Vertical, horizontal and lateral, observe the change of gravity!</string>-->
+<!--    &lt;!&ndash; MSensor &ndash;&gt;-->
+<!--    <string name="msensor_name">Magnetic Sensor</string>-->
+<!--    <string name="msensor_south">south</string>-->
+<!--    <string name="msensor_west">west</string>-->
+<!--    <string name="msensor_east">east</string>-->
+<!--    <string name="msensor_north">north</string>-->
+<!--    <string name="msensor_southwest">southwest</string>-->
+<!--    <string name="msensor_northwest">northwest</string>-->
+<!--    <string name="msensor_northeast">northeast</string>-->
+<!--    <string name="msensor_southeast">southeast</string>-->
+<!--    <string name="msensor_degree">°</string>-->
+<!--    &lt;!&ndash; Gyroscope &ndash;&gt;-->
+<!--    <string name="gyroscope_name">Gyroscope</string>-->
+<!--    &lt;!&ndash; LightSensor &ndash;&gt;-->
+<!--    <string name="lightsensor_name">LightSensor</string>-->
+<!--    <string name="lightsensor_summary">Light intensity：</string>-->
+<!--    <string name="lightsensor_tips">Please check the light sensitivity values in-->
+<!--        the light and dark environment-->
+<!--</string>-->
+<!--    &lt;!&ndash; SDCard &ndash;&gt;-->
+<!--    <string name="sdcard_name">sdcard</string>-->
+<!--    <string name="sdcard_inter_tips">interSDcardFound:</string>-->
+<!--    <string name="sdcard_external_tips">externalSDcardFound:</string>-->
+<!--    <string name="sdcard_usage">useage: </string>-->
+<!--    <string name="sdcard_confirm">Have inserted SD card?</string>-->
+<!--    <string name="sdcard_to_insert">Please insert SD card</string>-->
+<!--    <string name="sdcard_unmounted">SDcardUnmounted!</string>-->
+<!--    &lt;!&ndash; Bluetooth &ndash;&gt;-->
+<!--    <string name="bluetooth_name">Bluetooth</string>-->
+<!--    <string name="bluetooth_scan_start">Scaning devices...</string>-->
+<!--    <string name="bluetooth_scan_finish">Finish scan</string>-->
+<!--    <string name="bluetooth_turning_on">Turning on bluetooth...</string>-->
+<!--    <string name="bluetooth_scan_null">Not found any device</string>-->
+<!--    &lt;!&ndash; WiFi &ndash;&gt;-->
+<!--    <string name="wifi_name">WiFi</string>-->
+<!--    <string name="wifi_text">WiFi test will be completed within 30 seconds, please wait.</string>-->
+<!--    <string name="wifi_scan_failed">Scan failed!</string>-->
+<!--    <string name="wifi_is_closing">WiFi is closing, please retry after a while.</string>-->
+<!--    <string name="wifi_scan_null">Not found any AP!</string>-->
+<!--    <string name="wifi_state_unknown">WiFi state unknown, please retry.</string>-->
+<!--    <string name="wifi_scan_find_ap">"AP list：\n"</string>-->
+<!--    &lt;!&ndash; Handset &ndash;&gt;-->
+<!--    <string name="handsetloopback_name">handset</string>-->
+<!--    <string name="handsetloopback_start_record">start record</string>-->
+<!--    <string name="handsetloopback_volume">volume</string>-->
+<!--    <string name="handsetloopback_click_start">click the button to start record</string>-->
+<!--    <string name="handsetloopback_stop_to_play">stop recording,click again to play</string>-->
+<!--    <string name="handsetloopback_recording">recording...</string>-->
+<!--    <string name="handsetloopback_playing">playing...</string>-->
+<!--    <string name="handsetloopback_record_again">play finish ,click again to restart</string>-->
+
+<!--    <string name="handset_name">Handset</string>-->
+<!--    <string name="handset_hint">Handset audio loopback testing...</string>-->
+<!--    <string name="handset_loopback">Handset audio loopback testing...</string>-->
+<!--    <string name="handset_playing">Replaying now, please listen to the receiver.</string>-->
+<!--    <string name="handset_confirm">Do you hear the sound?</string>-->
+<!--    <string name="handset_record_first">Please click Record button first</string>-->
+<!--    <string name="handset_replay_end">Have reached the end.</string>-->
+<!--    <string name="handset_to_record">Click Record button to record sound.</string>-->
+<!--    <string name="handset_recording">Now recording, please say some words to mic and-->
+<!--        click Stop button to stop.</string>-->
+<!--    &lt;!&ndash; Headset &ndash;&gt;-->
+<!--    <string name="headset_name">Headset</string>-->
+<!--    <string name="headset_hint">Headset</string>-->
+<!--    <string name="headset_recording">Now recording, please say some words to mic and-->
+<!--        click Stop button to stop.</string>-->
+<!--    <string name="headset_playing">Replaying now, please listen to the receiver.</string>-->
+<!--    <string name="headset_confirm">Do you hear the sound?</string>-->
+<!--    <string name="headset_record_first">Please click Record button first</string>-->
+<!--    <string name="headset_replay_end">Have reached the end.</string>-->
+<!--    <string name="headset_to_record">Click Record button to record sound.</string>-->
+<!--    &lt;!&ndash; Speaker &ndash;&gt;-->
+<!--    <string name="speaker_name">Speaker</string>-->
+<!--    <string name="speaker_hint">Can you hear music playing?</string>-->
+<!--    <string name="speaker_confirm">Do you hear the sound?</string>-->
+<!--    <string name="speaker_playing">Playing...</string>-->
+<!--    <string name="speaker_play_first">Please click Play button first</string>-->
+<!--    <string name="speaker_to_play">Click Play button to play sound.</string>-->
+<!--    <string name="speaker_recording">Now being recorded, please speak</string>-->
+<!--    &lt;!&ndash; GPS &ndash;&gt;-->
+<!--    <string name="gps_name">GPS</string>-->
+<!--    <string name="gps_enable_first">Please enable GPS first</string>-->
+<!--    &lt;!&ndash; FM &ndash;&gt;-->
+<!--    <string name="fm_name">FmRadio</string>-->
+<!--    <string name="fm_search">Search</string>-->
+<!--    <string name="fm_confirm">Can you hear the sound ?</string>-->
+<!--    &lt;!&ndash; Battery &ndash;&gt;-->
+<!--    <string name="battery_name">Battery</string>-->
+<!--    <string name="battery_info_status_label">State of charge:</string>-->
+<!--    <string name="battery_info_scale_label">Battery charge:</string>-->
+<!--    <string name="battery_info_level_label">Current electricity:</string>-->
+<!--    <string name="battery_info_health_label">Power status:</string>-->
+<!--    <string name="battery_info_technology_label">Power Technology:</string>-->
+<!--    <string name="battery_info_voltage_label">Current voltage:</string>-->
+<!--    <string name="battery_info_voltage_units">mV</string>-->
+<!--    <string name="battery_info_temperature_label">Power supply temperature:</string>-->
+<!--    <string name="battery_info_current_label">The battery terminal current:</string>-->
+<!--    <string name="battery_info_average_current_label">The battery terminal current:</string>-->
+<!--    <string name="battery_info_temperature_units">° C</string>-->
+<!--    <string name="battery_info_uptime">Since the start of time:</string>-->
+<!--    <string name="battery_info_awake_battery">Wake-up time of the battery:</string>-->
+<!--    <string name="battery_info_awake_plugged">Charging time:</string>-->
+<!--    <string name="battery_info_screen_on">Screen to open the time:</string>-->
+<!--    <string name="battery_info_status_unknown">Unknown</string>-->
+<!--    <string name="battery_info_status_charging">Charging</string>-->
+<!--    <string name="battery_info_status_charging_ac">(AC)</string>-->
+<!--    <string name="battery_info_status_charging_usb">(USB)</string>-->
+<!--    <string name="battery_info_status_discharging">Discharging</string>-->
+<!--    <string name="battery_info_status_not_charging">Not charged</string>-->
+<!--    <string name="battery_info_status_full">Full</string>-->
+<!--    <string name="battery_info_health_unknown">Unknown</string>-->
+<!--    <string name="battery_info_health_good">Well</string>-->
+<!--    <string name="battery_info_health_overheat">Overheat</string>-->
+<!--    <string name="battery_info_health_dead">Dead</string>-->
+<!--    <string name="battery_info_health_over_voltage">Voltage is too high</string>-->
+<!--    <string name="battery_info_health_unspecified_failure">An unknown error</string>-->
+<!--    <string name="battery_info_temperature_c">℃</string>-->
+<!--    &lt;!&ndash; FuelGaugeCalibration &ndash;&gt;-->
+<!--    <string name="fuelgauge_name">FuelGaulge Calibration</string>-->
+<!--    <string name="fuelgauge_hint">FuelGauge Calibration will be completed within 30s,-->
+<!--        please wait...</string>-->
+<!--    <string name="fuelgauge_processing">Processing...</string>-->
+<!--    &lt;!&ndash; NFC &ndash;&gt;-->
+<!--    <string name="nfc_name">NFC</string>-->
+<!--    <string name="nfc_not_available">NFC not available</string>-->
+<!--    <string name="nfc_enable_first">Enable NFC...</string>-->
+<!--    <string name="nfc_enable_fail">Can not enable NFC</string>-->
+<!--    <string name="nfc_scanning">NFC已打开，正在扫描中，请将NFC标签靠近设备背面</string>-->
+<!--    <string name="nfc_tag">NFC已打开，正在扫描中，请将NFC标签靠近设备背面\n已检测到NFC设备，标签内容：</string>-->
+<!--    <string name="nfc_enabling">即将打开NFC，请稍候</string>-->
+
+<!--    <string name="about_msg">-->
+<!--Serial Port API sample v1.1\n-->
+<!--\n-->
+<!--This program is the sample application to test the serial communication function.\n-->
+<!--\n-->
+<!--Copyright belongs to Quectel Wireless Solutions Co., Ltd.-->
+<!--\n-->
+<!--	</string>-->
+<!--    <string name="error_configuration">Please configure your serial port first.</string>-->
+<!--    <string name="error_security">You do not have read/write permission to the serial-->
+<!--		port.</string>-->
+<!--    <string name="error_unknown">The serial port can not be opened for an unknown-->
+<!--		reason.</string>-->
+
+<!--    &lt;!&ndash; serial port &ndash;&gt;-->
+<!--    <string name="loopback0">Sent bytes</string>-->
+<!-- 	<string name="loopback1">0</string>-->
+<!-- 	<string name="loopback2">Received back</string>-->
+<!-- 	<string name="loopback3">Lost bytes</string>-->
+<!-- 	<string name="loopback4">Corrupted bytes</string>-->
+
+<!-- 	<string name="main_serial0">Setup</string>-->
+<!-- 	<string name="main_serial1">Console</string>-->
+<!-- 	<string name="main_serial2">Loopback</string>-->
+<!-- 	<string name="main_serial3">Send 01010101</string>-->
+<!-- 	<string name="main_serial4">About</string>-->
+<!-- 	<string name="main_serial5">Quit</string>-->
+
+<!-- 	<string name="sending01010101">Sending 01010101...</string>-->
+
+<!-- 	<string name="serialport_name0">Serial Port0</string>-->
+<!-- 	<string name="serialport_name1">Serial Port1</string>-->
+
+<!--    &lt;!&ndash; wmd &ndash;&gt;-->
+<!--    <string name="aging_name">Aging Test</string>-->
+<!--    <string name="auto_test_name">Auto Test</string>-->
+<!--    <string name="quick_test_name">Quick Test</string>-->
+<!--    <string name="factory_reset_text">Factory Reset</string>-->
+<!--    <string name="factory_reset_summary">Whether to confirm the implementation ?</string>-->
+
+<!--    &lt;!&ndash; 红外灯 &ndash;&gt;-->
+<!--    <string name="irled_name">IR Led</string>-->
+<!--    <string name="irled_confirm">Is the IR Led on?</string>-->
+
+<!--    &lt;!&ndash; 背光 &ndash;&gt;-->
+<!--    <string name="backlight_name">BackLight</string>-->
+<!--    <string name="backlight_confirm">Is the backlight on and off normally?</string>-->
+
+<!--    &lt;!&ndash; OTG &ndash;&gt;-->
+<!--    <string name="OTG_name">OTG</string>-->
+<!--    <string name="OTG_confirm">Is OTG normally?</string>-->
+<!--    <string name="OTG_init">Start testing OTG...</string>-->
+<!--    <string name="OTG_fail">The OTG device was not detected</string>-->
+<!--    <string name="OTG_ok">The OTG device was detected</string>-->
+<!--    <string name="storage_volume_summary">The usage of storage space of OTG device is as follows:\n%1$s used of %2$s</string>-->
+<!--    &lt;!&ndash; 主板信息 &ndash;&gt;-->
+<!--    <string name="DeviceInfo_name">DeviceInfo</string>-->
+<!--    <string name="DeviceInfo_confirm">Is DeviceInfo normally?</string>-->
+<!--    &lt;!&ndash; SN号 &ndash;&gt;-->
+<!--    <string name="SNNumber_name">SNNumber</string>-->
+<!--    <string name="SNNumber_confirm">Is SNNumber normally?</string>-->
+<!--    &lt;!&ndash; 软件版本 &ndash;&gt;-->
+<!--    <string name="SWVersion_name">SWVersion</string>-->
+<!--    <string name="SWVersion_confirm">Is SWVersion normally?</string>-->
+<!--    &lt;!&ndash; 测试报告 &ndash;&gt;-->
+<!--    <string name="TestReport_name">TestReport</string>-->
+<!--    <string name="TestReport_confirm">Is TestReport normally?</string>-->
+<!--    <string name="TestReport_title_pass">Successful items：</string>-->
+<!--    <string name="TestReport_title_fail">Failed items：</string>-->
+<!--    <string name="TestReport_title_untest">Untested items：</string>-->
+<!--    &lt;!&ndash; 老化测试 &ndash;&gt;-->
+<!--    <string name="agingtest_name">agingtest</string>-->
+<!--    <string name="agingtest_lcd_cb">"LCD"</string>-->
+<!--    <string name="agingtest_spk_cb">"Speaker"</string>-->
+<!--    <string name="agingtest_vbr_cb">"Vibrator"</string>-->
+<!--    <string name="agingtest_inf_cb">"Infrared"</string>-->
+<!--    <string name="agingtest_fls_cb">"FlashLight"</string>-->
+<!--    <string name="agingtest_start_bt">"Agingtest"</string>-->
+<!--    <string name="agingtest_text">"Agingtest In Progress"</string>-->
+<!--    <string name="timer">Timer</string>-->
+<!--    &lt;!&ndash; 工程相机 &ndash;&gt;-->
+<!--    <string name="EngineeringCamera_name">"EngineeringCamera"</string>-->
+<!--    <string name="takepicture">"takeophpto"</string>-->
+<!--    <string name="soundrecord">"soundrecord"</string>-->
+<!--    <string name="videotape">"videorecord"</string>-->
+<!--    &lt;!&ndash;framework&ndash;&gt;-->
+<!--    <string name="warning_tips">This machine has not passed the complete test!</string>-->
+<!--    &lt;!&ndash;body temp&ndash;&gt;-->
+<!--    <string name="bodytemp_name">BodyTemp</string>-->
+<!--    <string name="bodytemp_temp">BodyTemp:</string>-->
+<!--    <string name="bodytemp_start">REQUEST BODYTEMP</string>-->
+<!--    &lt;!&ndash;ircut&ndash;&gt;-->
+<!--    <string name="ircut_name">IRCut</string>-->
+<!--    <string name="ircut_confirm">Click button,Can you see the screen change and the voice ?</string>-->
+<!--</resources>-->

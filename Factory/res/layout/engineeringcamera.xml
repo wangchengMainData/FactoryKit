@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+   >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <SurfaceView
+        android:id="@+id/surfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/homecamera_bottom_relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00ffffff"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+        android:id="@+id/img_camera"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="centerInside"
+        android:layout_marginBottom="20dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/factorycamera_btn_change"
+        />
+    </RelativeLayout>
+
+</RelativeLayout>

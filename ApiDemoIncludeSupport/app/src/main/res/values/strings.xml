@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">GXXDemo</string>
+    <string name="action_settings">Settings</string>
+    <string name="led_name">LED</string>
+    <string name="device_info_name">Device Info</string>
+    <string name="key_name">Key</string>
+    <string name="bodytemp_name">测温</string>
+    <string name="dial">拨号盘</string>
+    <string name="settings">系统设置</string>
+    <string name="engineeringcam">工程相机</string>
+    <string name="syscam">系统相机</string>
+    <string name="wifi_display">投射</string>
+    <string name="usb_activity_name">U盘</string>
+    <string name="app_install_activity_name">App Install</string>
+    <string name="ota_activity_name">OTA</string>
+    <string name="iptables_activity_name">Iptables</string>
+
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- REQ241,system:Log Tool,wmd,2020.0416 -->
+<resources>
+<!--    <string name="ok">确认</string>-->
+
+    <string name="log_manager_name">日志管理</string>
+    <string name="log_manager_switch_title">日志开关</string>
+    <string name="log_manager_switch_off">关闭</string>
+    <string name="log_manager_switch_on">打开</string>
+    <string name="log_manager_limit_size">日志条目限制</string>
+    <string name="log_manager_log_clear">清除日志</string>
+    <string name="log_manager_clear_btn">清除</string>
+    <string name="log_manager_bugreport_title">日志报告</string>
+    <string name="log_manager_bugreport_run">导出</string>
+    <string name="log_manager_bugreport_start">正在导出报告，请稍候！</string>
+    <string name="log_manager_bugreport_stop">报告导出结束</string>
+    <string name="log_manager_bugreport_path">报告导出路径：</string>
+    <string name="log_manager_bugreport_u_disk_root">/bugreports</string>
+    <string name="log_manager_bugreport_clear">清除报告</string>
+    <string name="log_manager_bugreport_view">查看报告</string>
+    <string name="log_manager_view_btn">查看</string>
+    <string name="log_manager_clear_all_finished">删除报告已完成</string>
+    <string name="log_manager_bugreport_move_to_sdcard">拷贝报告到SD卡</string>
+    <string name="log_manager_bugreport_move_to_sdcard_btn">拷贝</string>
+    <string name="log_manager_move_to_sdcard_finished">拷贝报告到SD卡结束</string>
+    <string name="log_manager_crash_info_upload">崩溃信息实时上报</string>
+    <string name="log_manager_crash_info_save_url">保存上报地址</string>
+
+</resources>
